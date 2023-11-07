@@ -1,4 +1,6 @@
+/* used to create a personalised animation */
 @keyframes lefttoright {
+    /* this shows a to and from for a location */
     from {
         transform: translateX(200px);
         opacity: 0;
@@ -9,10 +11,12 @@
     }
 
 }
-
+/* this is an example of 2 classes being active at the same time */
 .left-to-right.active {
+    /* add custom animation */
     animation: lefttoright;
     animation-duration: 5s;
+    /* tells the css to stay in the state of the end of the animation */
     animation-fill-mode: forwards;
 }
 
@@ -34,7 +38,7 @@
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
-
+/* this is another way of doing an animation, usually with more and precise steps */
 @keyframes bottomzigzag {
     0% {transform: translateX(0px) translateY(250px); opacity: 0;}
     20% {transform: translateX(280px) translateY(405px);}
